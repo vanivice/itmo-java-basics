@@ -6,6 +6,7 @@ public class Main {
         print();
         res();
         res2();
+        count();
         multiply();
         scan();
         isEvenNotEven();
@@ -16,22 +17,25 @@ public class Main {
         System.out.println("знаю");
         System.out.println("Java.\n");
     }
-    public static int res() {
-        int res = (46 + 10) * (10 / 3);
-        System.out.println(res);
+    public static double res() {
+        double res = (46 + 10) * ((double) 10 / 3);
         return res;
     }
     public static int res2() {
         int res2 = (29) * (4) * (15);
-        System.out.println(res2);
         return res2;
+    }
+    public static int count() {
+        int number = 10500;
+        int result1 = (number / 10) / 10;
+        System.out.println(result1);
+        return result1;
     }
     public static double multiply() {
         double one = 3.6;
         double two = 4.1;
         double three = 5.9;
         double result2 = one * two * three;
-        System.out.println(result2);
         return result2;
     }
     public static void scan() {
@@ -54,5 +58,4 @@ public class Main {
             System.out.println("Выход за пределы диапазона");
         }
     }
-
 }
