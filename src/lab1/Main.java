@@ -25,9 +25,9 @@ public class Main {
         int res2 = (29) * (4) * (15);
         return res2;
     }
-    public static int count() {
-        int number = 10500;
-        int result1 = (number / 10) / 10;
+    public static double count() {
+        double number = 10500;
+        double result1 = (number / 10) / (double) 10;
         System.out.println(result1);
         return result1;
     }
