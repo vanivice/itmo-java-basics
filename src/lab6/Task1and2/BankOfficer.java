@@ -1,4 +1,4 @@
-package Lab6.Task1and2;
+package lab6.Task1and2;
 
 public class BankOfficer extends Human {
     private String bankName;

@@ -1,4 +1,4 @@
-package Lab6.Task3;
+package lab6.Task3;
 
 public class Car {
     public int weight;

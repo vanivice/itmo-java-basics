@@ -1,4 +1,4 @@
-package Lab6.Task5;
+package lab6.Task5;
 import java.util.Scanner;
 
 public class Parent {

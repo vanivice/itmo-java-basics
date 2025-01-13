@@ -1,4 +1,4 @@
-package Lab6.Task1and2;
+package lab6.Task1and2;
 
 public abstract class Human implements InterfaceUser {
     protected String firstName;
