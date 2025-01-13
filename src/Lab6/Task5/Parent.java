@@ -7,12 +7,11 @@ public class Parent {
 
     Scanner scanner = new Scanner(System.in);
 
-    public void setAge() {
+    public void setMean() {
         age = scanner.nextInt();
     }
 
-    public int getAge() {
+    public void getMean() {
         System.out.println(age);
-        return age;
     }
 }

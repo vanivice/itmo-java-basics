@@ -1,12 +1,13 @@
 package Lab6.Task5;
 
 public class Child extends Parent {
-    void setName() {
+    @Override
+    public void setMean() {
         name = scanner.next();
     }
 
-    String getName(){
+    @Override
+    public void getMean(){
         System.out.println(name);
-        return name;
     }
 }

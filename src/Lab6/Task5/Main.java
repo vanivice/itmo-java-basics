@@ -3,10 +3,7 @@ public class Main {
     public static void main(String[] args) {
         Child user = new Child();
 
-        user.setAge();
-        user.getAge();
-
-        user.setName();
-        user.getName();
+        user.setMean();
+        user.getMean();
     }
 }
