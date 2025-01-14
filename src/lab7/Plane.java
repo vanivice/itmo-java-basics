@@ -1,21 +1,26 @@
 package lab7;
 
 public class Plane {
-    PlaneWing airbus = new PlaneWing();
-    PlaneWing challenger = new PlaneWing();
+    PlaneWing planeWing;
 
-    public void setValue() {
-        airbus.setWeightPlaneWing(148.987);
-        challenger.setWeightPlaneWing(298.245);
+    public Plane() {
+        planeWing = new PlaneWing();
+    }
+
+    public void setValue(double weightPlaneWing) {
+        planeWing.setWeightPlaneWing(weightPlaneWing);
     }
 
     public void printInfo() {
-        airbus.printWeightPlaneWing();
-        challenger.printWeightPlaneWing();
+        planeWing.printWeightPlaneWing();
     }
 
     private static class PlaneWing {
         double weightPlaneWing;
+
+        public PlaneWing() {
+            this.weightPlaneWing = 0;
+        }
 
         public void setWeightPlaneWing(double weightPlaneWing) {
             this.weightPlaneWing = weightPlaneWing;
