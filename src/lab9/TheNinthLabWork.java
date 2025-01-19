@@ -2,7 +2,7 @@ package lab9;
 import java.util.*;
 
 public class TheNinthLabWork {
-    static Set<Integer> RemoveDuplicate(List<Integer> integers){
+    static Set<Integer> RemoveDuplicate(List<Integer> integers) {
         return new HashSet<>(integers);
     }
 
@@ -25,7 +25,7 @@ public class TheNinthLabWork {
     static long a;
     static long result;
 
-    static void  requiredMethod() {
+    static void requiredMethod() {
         List<Integer> arrayList = new ArrayList<>();
         List<Integer> linkedList = new LinkedList<>();
 
@@ -73,7 +73,7 @@ public class TheNinthLabWork {
     static class User {
         private String name;
 
-        public User(String name) {
+        public User(String name)  {
             this.name = name;
         }
 
@@ -82,7 +82,8 @@ public class TheNinthLabWork {
         }
     }
 
-    static void statByName() {
+    static Integer resPlayerByName() {
+        Integer score = 0;
         Scanner scanner = new Scanner(System.in);
         Map<User, Integer> map = new HashMap<>();
         map.put(new User("Иван"), (int)(Math.random() * 100));
@@ -96,9 +97,11 @@ public class TheNinthLabWork {
 
             if (entry.getKey().getName().equals(name)) {
                 System.out.printf("Результат игрока равен: " + entry.getValue() + " очкам");
-                return;
+                score = entry.getValue();
+                return score;
             }
         }
-        System.out.println("Такого пользователя нет.");
+        System.out.println("Такого игрока нет.");
+        return score;
     }
 }
